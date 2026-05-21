@@ -46,7 +46,8 @@ export default function RentalSteps() {
             <motion.div
               key={step.number}
               variants={fadeUp}
-              className="relative bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"
+              whileHover={{ scale: 1.02 }}
+              className="relative bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-300 ease-out"
             >
               <span className="text-5xl font-bold text-brand-accent/15">
                 {step.number}
