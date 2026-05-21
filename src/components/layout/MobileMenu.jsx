@@ -15,7 +15,7 @@ export default function MobileMenu({ links, currentPath, onClose }) {
         animate={{ x: 0 }}
         exit={{ x: "100%" }}
         transition={{ type: "tween", duration: 0.3 }}
-        className="absolute right-0 top-0 bottom-0 w-80 max-w-full bg-brand-dark shadow-2xl"
+        className="absolute right-0 top-0 bottom-0 w-80 max-w-full bg-brand-dark shadow-2xl overflow-hidden flex flex-col"
       >
         <div className="flex items-center justify-between p-6 border-b border-white/10">
           <span className="text-white font-bold text-lg">Menu</span>
@@ -30,7 +30,7 @@ export default function MobileMenu({ links, currentPath, onClose }) {
           </button>
         </div>
 
-        <div className="p-6 flex flex-col gap-1">
+        <div className="p-6 flex flex-col gap-1 overflow-y-auto flex-1">
           {links.map((link) => (
             <Link
               key={link.to}
