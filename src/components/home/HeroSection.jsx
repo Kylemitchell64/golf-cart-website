@@ -9,6 +9,9 @@ export default function HeroSection() {
         src="/images/hero/Gemini_Generated_Image_rao3rrao3rrao3rr%20%281%29.png"
         alt=""
         aria-hidden="true"
+        width="1920"
+        height="1080"
+        fetchpriority="high"
         className="absolute inset-0 w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105 transition-transform duration-1000"
       />
 

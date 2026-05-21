@@ -21,6 +21,8 @@ export default function ProductCard({ product }) {
           <img
             src={`${images[0]}/v1/fill/w_400,h_300,al_c,q_60/image.jpg`}
             alt={name}
+            width="400"
+            height="300"
             className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
           />

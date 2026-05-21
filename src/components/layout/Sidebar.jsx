@@ -46,6 +46,7 @@ export default function Sidebar() {
       {/* Logo */}
       <Link
         to="/"
+        aria-label="Golf Cart Specialists — Home"
         className="flex items-center gap-4 px-4 py-6 min-w-[14rem] shrink-0 hover:opacity-80 transition-opacity"
       >
         <div className="w-8 h-8 bg-brand-accent rounded-lg flex items-center justify-center shrink-0">
@@ -74,6 +75,7 @@ export default function Sidebar() {
             <Link
               key={link.to}
               to={link.to}
+              aria-label={link.label}
               className={`relative flex items-center gap-4 px-4 py-3 min-w-[14rem] transition-colors duration-200 ${
                 isActive
                   ? "text-brand-accent"
@@ -85,6 +87,7 @@ export default function Sidebar() {
               )}
               <svg
                 className="w-5 h-5 shrink-0"
+                aria-hidden="true"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -109,10 +112,12 @@ export default function Sidebar() {
       {/* Phone */}
       <a
         href="tel:7062214653"
+        aria-label="Call Golf Cart Specialists at (706) 221-4653"
         className="flex items-center gap-4 px-4 py-5 min-w-[14rem] text-gray-400 hover:text-brand-accent transition-colors duration-200 shrink-0"
       >
         <svg
           className="w-5 h-5 shrink-0"
+          aria-hidden="true"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
